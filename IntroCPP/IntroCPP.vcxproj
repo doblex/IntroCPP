@@ -123,15 +123,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="EserciziOpEStruct.cpp" />
+    <ClCompile Include="EserciziPuntatori.cpp" />
     <ClCompile Include="IntroCPP.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Operatori.cpp" />
+    <ClCompile Include="Puntatori.cpp" />
+    <ClCompile Include="StuttureDiControllo.cpp" />
     <ClCompile Include="Weapon.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="enums.h" />
+    <ClInclude Include="EserciziOpEStruct.h" />
+    <ClInclude Include="EserciziPuntatori.h" />
     <ClInclude Include="IntroCPP.h" />
     <ClInclude Include="Operatori.h" />
+    <ClInclude Include="Puntatori.h" />
+    <ClInclude Include="StuttureDiControllo.h" />
     <ClInclude Include="Weapon.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

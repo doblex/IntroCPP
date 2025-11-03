@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include "conio.h"
 #include "enums.h"
 
 using namespace std;
@@ -78,6 +79,7 @@ class Weapon
 		~Weapon();
 
 		void Shoot();
+		void Exec();
 
 		GunInfo GetInfo();
 

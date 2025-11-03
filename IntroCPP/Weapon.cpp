@@ -60,7 +60,26 @@ void Weapon::Shoot()
 	}
 }
 
+void Weapon::Exec()
+{
+	Weapon myWeapon("Desert Eagle", weaponType::PISTOL, 50);
+	myWeapon.GetInfo().ToString();
+	
+	cout << "Press S to shoot!!\n";
+	cout << "Press return to go out\n\n";
+	
+	while (_getch() == 's')
+	{
+		myWeapon.Shoot();
+	}
+	
+	cout << "Press any key to exit";
+	cin.get(); // To pause the console window
+}
+
 GunInfo Weapon::GetInfo()
 {
 	return GunInfo{ name, type, maxAmmo, currentAmmo, damage, range, reloadTime, isAutomatic, isSilenced, jammed };
 }
+
+
